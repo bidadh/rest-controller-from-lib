@@ -9,16 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ideabaker.samples</groupId>
-    <artifactId>rest-controller-from-lib</artifactId>
+    <artifactId>second-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rest-controller-from-lib</name>
+    <name>second-app</name>
     <description>Demo project for Spring Boot</description>
-
-    <modules>
-        <module>main-app</module>
-        <module>second-app</module>
-        <module>rest-controller-common</module>
-    </modules>
 
     <properties>
         <java.version>1.8</java.version>
@@ -35,11 +29,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

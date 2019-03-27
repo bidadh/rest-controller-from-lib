@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 
 @Slf4j
@@ -18,10 +18,11 @@ public class CommonService implements ApplicationContextAware {
     private Collection<DatabaseAwareService> dbServices;
 
     public Map<String, String> message() {
-        aliveServices.forEach(s -> System.out.println(s.getClass().getName()));
-        integrationServices.forEach(s -> System.out.println(s.name() + " is alive?: " + s.isAlive()));
-        dbServices.forEach(s -> System.out.println(s.name() + " is alive?: " + s.isAlive()));
-        return Collections.singletonMap("common message", "Hello Arthur! from common");
+        Map<String,String> result = new HashMap<>();
+        aliveServices.forEach(s -> result.put(s.getClass().getName(), String.valueOf(s.isAlive())));
+        integrationServices.forEach(s -> result.put(s.name(), String.valueOf(s.isAlive())));
+        dbServices.forEach(s -> result.put(s.name(), String.valueOf(s.isAlive())));
+        return result;
     }
 
     @Override

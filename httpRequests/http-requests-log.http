@@ -1,0 +1,22 @@
+GET http://localhost:8080/common/home
+Host: localhost:8080
+Accept: application/json
+
+<> 2019-03-27T081421.200.json
+
+###
+
+GET http://localhost:8090/common/home
+Host: localhost:8090
+Accept: application/json
+
+<> 2019-03-27T081352.200.json
+
+###
+
+GET http://localhost:8080/common/home
+Host: localhost:8080
+Accept: application/json
+
+###
+

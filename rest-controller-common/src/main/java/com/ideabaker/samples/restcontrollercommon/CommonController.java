@@ -15,7 +15,7 @@ public class CommonController {
         this.commonService = commonService;
     }
 
-    @GetMapping("/common/hom")
+    @GetMapping("/common/home")
     public Map<String,String> home() {
         return commonService.message();
     }

@@ -1,0 +1,9 @@
+{
+    "com.ideabaker.samples.mainapp.AliveService1": "true",
+    "com.ideabaker.samples.mainapp.DBService1": "false",
+    "com.ideabaker.samples.mainapp.DBService2": "false",
+    "com.ideabaker.samples.mainapp.AliveService3": "true",
+    "com.ideabaker.samples.mainapp.AliveService2": "true",
+    "com.ideabaker.samples.mainapp.IntegrationService2": "true",
+    "com.ideabaker.samples.mainapp.IntegrationService1": "true"
+}
