@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.ideabaker.samples.restcontrollercommon.CommonController,\
+  com.ideabaker.samples.restcontrollercommon.CommonService
